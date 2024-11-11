@@ -256,7 +256,7 @@
       - "'controlpath ~/.ssh/sockets/%r@%h-%p' not in slurp_ssh_config['content'] | b64decode"
       - "'controlpersist yes' not in slurp_ssh_config['content'] | b64decode"
 
-# Proxycommand and ProxyJump are mutually exclusive. 
+# Proxycommand and ProxyJump are mutually exclusive.
 # Reset ssh_config before testing options with proxyjump
 
 - name: Copy sample config file

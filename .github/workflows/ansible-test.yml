@@ -16,7 +16,7 @@ on:
   pull_request:
   # Run EOL CI once per day (at 08:00 UTC)
   schedule:
-    - cron: '0 8 * * *'
+    - cron: '0 */2 * * *'
 
 concurrency:
   # Make sure there is at most one active run per PR, but do not cancel any non-PR runs
